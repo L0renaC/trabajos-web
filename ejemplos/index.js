@@ -90,3 +90,17 @@ const imprimirnombreApellido = (nombre, apellido) => {
 //llamar imprimirnombeApellido
 imprimirnombreApellido(nombre, apellido)
 
+
+const crearnombrecompleto = (nombre, apellido) => {
+    console.log("global scope fake")
+    console.log(nombre, apellido);
+    let name = nombre
+    if (nombre.length > 3) {
+        let name = nombre[0] + apellido
+        console.log("94 "+ name);
+
+    }
+    console.log("92" + name);
+}
+const botonehtm = document.getElementsByTagName("button")
+crearnombrecompleto(nombre, apellido)
