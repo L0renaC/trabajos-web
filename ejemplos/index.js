@@ -104,3 +104,26 @@ const crearnombrecompleto = (nombre, apellido) => {
 }
 const botonehtm = document.getElementsByTagName("button")
 crearnombrecompleto(nombre, apellido)
+
+let estudiantes = []
+
+// agregar
+//estudiantes.push(5)
+//estudiantes.push(null)
+//estudiantes.push({})
+//estudiantes.push(()=> {console.log(); })
+estudiantes.push({"nombre":"juan", id:123})
+estudiantes.push({"nombre":"maria", id:1234})
+
+estudiantes.forEach((x) => console.log(x.nombre) )
+
+for (let i=0; i < estudiantes.length; i ++){
+    if(studiantes[i].nombre =="maria"){
+        console.log(estudiantes[i].id);
+    }
+}
+const marias = estudiantes.find(x=>x.nombre == "maria")
+marias[0].id
+
+estudiantes.map(x=> {return{...x,edad:null}})
+console.log(estudiantes);
