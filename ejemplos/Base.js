@@ -127,3 +127,28 @@ marias[0].id
 
 estudiantes.map(x=> {return{...x,edad:null}})
 console.log(estudiantes);
+
+// JSON (js object notation)
+function jsonsEnJavascript(){
+    console.log("manejo de JSON")
+    const ciudad={
+        nombe: "Medellin",
+
+        "token-ciudad":"",
+        poblacion: 2.5,
+        barrios: 31,
+        calcularCantidadVehiculos(){
+            console.log("total de vehiculos", "55m", this.nombe)
+        }
+    }
+    
+    //destructuracion
+    
+    const{nombre:nombreciudad}=ciudad;
+    console.log(nombreciudad);
+// funciones dentro de un JSON
+    ciudad.calcularCantidadVehiculos()
+    console.log(ciudad.nombre);
+    console.log(ciudad["nombe"]);
+    console.log(ciudad["token-ciudad"])
+}
